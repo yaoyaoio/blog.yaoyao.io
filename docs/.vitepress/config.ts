@@ -7,7 +7,7 @@ export default defineConfig({
   title: "YaoYao’s Blog",
   description: "路漫漫其修远兮，吾将上下而求索。",
   cleanUrls: true,
-  appearance: false, // disable dark mode
+  appearance: true, // disable dark mode
   ignoreDeadLinks: true,
   base: "/",
   buildEnd: rss,
@@ -79,7 +79,7 @@ export default defineConfig({
     },
     footer: {
       message: `<a href="https://blog.yaoyao.io/">YaoYao’s Blog</a>.`,
-      copyright: `Copyright © 2023 <a href="https://github.com/yaoyaoio" target="_blank">@YaoYao</a>.<br/>
+      copyright: `Copyright © 2015-2023 <a href="https://github.com/yaoyaoio" target="_blank">@YaoYao</a>.<br/>
       `,
     },
   },
