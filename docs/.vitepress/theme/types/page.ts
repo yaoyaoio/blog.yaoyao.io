@@ -16,6 +16,7 @@ export interface PostPageDate {
 
 export interface PostPageFrontmatter {
   title: string; // 标题
+  subtitle?: string; // 副标题
   url: string; // 路径
   date: PostPageDate; // 日期
   cover: string; // 封面图

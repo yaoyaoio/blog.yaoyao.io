@@ -18,6 +18,7 @@ export default createContentLoader("/*/*.md", {
         title: frontmatter.title,
         url: url,
         excerpt: excerpt,
+        subtitle: frontmatter.subtitle,
         cover: frontmatter.headerImage || frontmatter.cover,
         date: formatDate(frontmatter.date),
         categories: frontmatter.categories,

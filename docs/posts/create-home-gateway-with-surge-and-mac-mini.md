@@ -10,7 +10,6 @@ headerImageCreditLink: https://unsplash.com/photos/IITaO-_w58A  # 图片来源�
 catalog: true # 是否启用右侧目录，会覆写 `themeConfig.catalog`（可选，默认：false）
 hide: false # 是否在首页和标签页博客列表中隐藏这篇博客（可选，默认：false）
 ---
----
 
 ## 前言
 
