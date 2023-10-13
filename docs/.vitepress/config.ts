@@ -10,7 +10,7 @@ export default defineConfig({
   appearance: true, // disable dark mode
   ignoreDeadLinks: true,
   base: "/",
-  buildEnd: rss,
+  // buildEnd: rss,
   markdown: {
     lineNumbers: true,
     config: (md) => {
