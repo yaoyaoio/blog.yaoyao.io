@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.post-item {
+    @apply flex-1 bg-white dark:bg-zinc-800 rounded-t overflow-hidden h-64 shadow-lg ease-in-out hover:shadow-2xl duration-300;
+}
+
+.post-item-cover {
+}
+
+.post-item-cover-img {
+    @apply overflow-hidden w-full h-60 md:h-40 relative bg-zinc-100 dark:bg-neutral-900 absolute top-0 left-0 h-full w-full object-cover rounded-t hover:scale-105 ease-in duration-300;
+}
+
+.post-item-info {
+    @apply w-full px-6 mt-5;
+}
+
+.post-item-info-title {
+    @apply h-auto md:h-14 font-medium antialiased break-normal text-base md:text-lg text-gray-800 dark:text-slate-300 line-clamp-2;
+}
+
+.post-item-info-more {
+    @apply flex-none mt-auto bg-white dark:bg-zinc-800 rounded-b rounded-t-none overflow-hidden shadow-lg p-6 h-16;
+}
