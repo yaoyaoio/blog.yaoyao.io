@@ -2,6 +2,7 @@ import {defineConfig, HeadConfig} from "vitepress";
 import {rss} from "./genFeed.js";
 
 import markdownImagePlugin from "./markdownPlugin";
+import markdownCodeEnhance from "./mdCode";
 
 export default defineConfig({
   title: "YaoYao’s Blog",
@@ -12,9 +13,10 @@ export default defineConfig({
   base: "/",
   // buildEnd: rss,
   markdown: {
-    lineNumbers: true,
+    lineNumbers: false,
     config: (md) => {
       md.use(markdownImagePlugin);
+      md.use(markdownCodeEnhance);
     },
   },
   head: [

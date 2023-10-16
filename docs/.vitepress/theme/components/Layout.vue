@@ -1,16 +1,16 @@
 <script setup lang="ts">
-import DefaultTheme from "vitepress/theme";
 import ArticleHeader from "./ArticleHeader.vue";
+import BaseLayout from "./BaseLayout.vue";
+import DefaultTheme from "vitepress/theme";
 
-const {Layout} = DefaultTheme;
 </script>
 
 <template>
-  <Layout>
-    <template #doc-before>
-      <ArticleHeader/>
-    </template>
-  </Layout>
+    <BaseLayout>
+      <template #doc-before>
+        <ArticleHeader/>
+      </template>
+    </BaseLayout>
 </template>
 
 <style scoped>

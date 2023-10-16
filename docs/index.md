@@ -4,13 +4,13 @@ layoutClass: 'm-home-layout'
 
 hero:
   name: YaoYao
-  text: This is my blog.
+  text: Love and Freedom
   tagline: 路漫漫其修远兮，吾将上下而求索。
   image:
     src: /logo.png
     alt: YaoYao
 #  actions:
-#    - text: 技术文章
+#    - text: 开始阅读
 #      link: /fe/es6/
 #    - text: 前端导航
 #      link: /nav

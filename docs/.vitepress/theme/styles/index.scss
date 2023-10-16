@@ -1,5 +1,10 @@
-@import "./custom.scss";
-@import './rainbow.scss';
+// Global styles
 @import './vars.scss';
+// custom styles
+@import "./custom.scss";
+// rainbow code highlighter theme
+@import './rainbow.scss';
+@import "./var.scss";
 @import './overrides.scss';
-//@import "./header.scss";
+@import "./components/code.scss";
+@import "./layouts/post.scss";
