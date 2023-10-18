@@ -1,10 +1,11 @@
 // Global styles
 @import './vars.scss';
-// custom styles
+// custom styles // 自定义样式
 @import "./custom.scss";
-// rainbow code highlighter theme
+// rainbow code highlighter theme 首页Hero部分
 @import './rainbow.scss';
 @import "./var.scss";
 @import './overrides.scss';
 @import "./components/code.scss";
 @import "./layouts/post.scss";
+@import "./custom.css";

@@ -1,3 +1,5 @@
+import {PostPageFrontmatter} from "../types";
+
 export function formatDate(d: any, fmt = "yyyy-MM-dd hh:mm:ss") {
   if (!(d instanceof Date)) {
     d = new Date(d);
@@ -26,26 +28,6 @@ export function formatDate(d: any, fmt = "yyyy-MM-dd hh:mm:ss") {
       );
   }
   return fmt;
-}
-
-export function getPreviewImage(url: string) {
-  // return `https://img.llyz.xyz/${url}/w=800`;
-  return url;
-}
-
-export function getBannerImage(url: string) {
-  // return `https://img.llyz.xyz/${url}/w=800`;
-  return url;
-}
-
-export function getArticleLazyImage(url: string) {
-  // return `https://img.llyz.xyz/${url}/w=1200`;
-  return url;
-}
-
-export function getArticleBlurImage(url: string) {
-  // return `https://img.llyz.xyz/${url}/w=800,blur=10`;
-  return url;
 }
 
 export function isCurrentWeek(date: Date, target?: Date) {
@@ -98,4 +80,65 @@ export function formatShowDate(date: Date | string) {
   } else {
     return formatDate(new Date(date), "yyyy-MM-dd");
   }
+}
+
+
+export const formatDateString = (date: string): string => {
+  const dateJson = new Date(date).toJSON();
+
+  const dateStr = new Date(+new Date(dateJson) + 8 * 3600 * 1000)
+    .toISOString()
+    .replace(/T/g, " ")
+    .replace(/\.[\d]{3}Z/, "");
+
+  return dateStr.split(" ")[0];
+};
+
+export const resolveDate = (date: string, type: "year" | "month" | "day") => {
+  const dateStr = formatDateString(date).replace(/-/g, "/");
+  const dateObj = new Date(dateStr);
+
+  const info = {
+    year: dateObj.getFullYear(),
+    month: dateObj.getMonth() + 1,
+    day: dateObj.getDate()
+  };
+
+  return info[type].toString();
+};
+
+export interface PostDataWithDate {
+  date: string;
+  data: PostPageFrontmatter[];
+}
+
+export const getPostsByYear = (posts: PostPageFrontmatter[]) => {
+  const formatPages = {} as Record<string, PostPageFrontmatter>;
+  const formatPagesArr = [] as Array<{
+    year: string;
+    data: PostPageFrontmatter[];
+  }>;
+
+  for (const post of posts) {
+    if (post.date.raw) {
+      const pageDateYear = resolveDate(post.date.raw, "year");
+      // @ts-ignore
+      if (formatPages[pageDateYear]) {
+        // @ts-ignore
+        formatPages[pageDateYear].push(post);
+      } else {
+        // @ts-ignore
+        formatPages[pageDateYear] = [post];
+      }
+    }
+  }
+  for (const key in formatPages) {
+    formatPagesArr.unshift({
+      // @ts-ignore
+      year: key,
+      // @ts-ignore
+      data: formatPages[key]
+    });
+  }
+  return formatPagesArr;
 }

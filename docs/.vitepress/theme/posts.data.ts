@@ -17,7 +17,9 @@ export default createContentLoader("/*/*.md", {
       .map(({url, frontmatter, excerpt}) => ({
         title: frontmatter.title,
         url: url,
+        path: url,
         excerpt: excerpt,
+        description: excerpt as string,
         subtitle: frontmatter.subtitle,
         cover: frontmatter.headerImage || frontmatter.cover,
         date: formatDate(frontmatter.date),
@@ -43,6 +45,7 @@ function formatDate(raw: string): PostPageDate {
   date.setUTCHours(12);
   return {
     time: +date,
+    raw: raw,
     formatShowDate: formatShowDate(date),
     string: date.toLocaleDateString("en-US", {
       year: "numeric",
@@ -51,4 +54,3 @@ function formatDate(raw: string): PostPageDate {
     }),
   };
 }
-

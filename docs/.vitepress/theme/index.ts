@@ -1,13 +1,17 @@
 import {Theme} from "vitepress";
 import DefaultTheme from "vitepress/theme";
-import './styles/index.scss'
 // @ts-ignore
-import Layout from "./components/Layout.vue";
+import Layout from "./components/BaseLayout.vue";
+import Page from "./components/Page.vue";
+import Archives from "./components/Archives.vue";
+import './styles/index.scss';
 import {customConfigProvider} from "./configProvider";
 
 export default {
   ...DefaultTheme,
   Layout: customConfigProvider(Layout),
   enhanceApp({app}) {
+    app.component("Page", Page);
+    app.component("Archives", Archives);
   },
 } as Theme;

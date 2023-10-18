@@ -9,15 +9,15 @@ hero:
   image:
     src: /logo.png
     alt: YaoYao
-#  actions:
-#    - text: 开始阅读
-#      link: /fe/es6/
-#    - text: 前端导航
-#      link: /nav
-#      theme: alt
-#    - text: mmPlayer
-#      link: https://netease-music.fe-mm.com
-#      theme: alt
+  actions:
+    - text: 最新
+      link: /articles
+    - text: 生活
+      link: /life
+      theme: alt
+    - text: 更多
+      link: /more
+      theme: alt
 features:
   - icon: 📖
     title: 使用 Surge && Mac mini 构建家庭网关
@@ -26,7 +26,7 @@ features:
     linkText: Read more
   - icon: 📖
     title: 如何在 Ubuntu 上配置 eBPF 开发环境
-    details: 介绍如何在 Ubuntu 上配置 eBPF 开发环境，包括安装 clang、llvm、libbpf、bpftool、bcc 等。
+    details: 如何在 Ubuntu 上配置 eBPF 开发环境，包括安装 clang、llvm、libbpf、bpftool、bcc 等。
     link: /posts/how-to-setup-ebpf-env-on-ubuntu
     linkText: Read more
 ---

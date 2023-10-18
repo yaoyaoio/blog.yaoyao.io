@@ -1,22 +1,25 @@
 import {defineConfig, HeadConfig} from "vitepress";
 import {rss} from "./genFeed.js";
 
-import markdownImagePlugin from "./markdownPlugin";
-import markdownCodeEnhance from "./mdCode";
+import {
+  markdownImagePlugin,
+  markdownCodeEnhancePlugin
+} from "./plugin/markdownPlugin";
 
 export default defineConfig({
   title: "YaoYao’s Blog",
+  lang: "zh-CN",
   description: "路漫漫其修远兮，吾将上下而求索。",
   cleanUrls: true,
+  // buildEnd: rss,
   appearance: true, // disable dark mode
   ignoreDeadLinks: true,
   base: "/",
-  // buildEnd: rss,
   markdown: {
     lineNumbers: false,
     config: (md) => {
       md.use(markdownImagePlugin);
-      md.use(markdownCodeEnhance);
+      md.use(markdownCodeEnhancePlugin);
     },
   },
   head: [
@@ -67,6 +70,7 @@ export default defineConfig({
     logo: "",
     nav: [
       {text: "首页", link: "/"},
+      {text: "文章", link: "/articles"},
       {text: "关于", link: "/about/"},
     ],
     socialLinks: [
@@ -84,5 +88,9 @@ export default defineConfig({
       copyright: `Copyright © 2015-2023 <a href="https://github.com/yaoyaoio" target="_blank">@YaoYao</a>.<br/>
       `,
     },
+    docFooter: {
+      prev: "上一篇",
+      next: "下一篇",
+    }
   },
 });
