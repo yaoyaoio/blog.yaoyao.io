@@ -5,7 +5,7 @@ import {
   markdownImagePlugin,
   markdownCodeEnhancePlugin
 } from "./plugin/markdownPlugin";
-import {handleHeadMeta} from "./plugin/head";
+import {handleHeadMeta} from "./plugin/headPlugin";
 
 export default defineConfig({
   title: "YaoYao’s Blog",
