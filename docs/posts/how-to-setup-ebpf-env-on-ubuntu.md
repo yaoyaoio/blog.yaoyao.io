@@ -2,6 +2,7 @@
 title: 如何在 Ubuntu 上配置 eBPF 开发环境
 date: 2023-03-30
 author: 耀耀
+isHome: true
 useHeaderImage: true
 headerImage: /img/in-post/ideun-kim-220908-morning.webp
 headerMask: rgba(40,57,101, .4)

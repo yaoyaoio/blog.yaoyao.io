@@ -9,7 +9,7 @@
           <div class="title-o"></div>
           {{ article.title }}
         </div>
-        <div class="date">{{ article.date.string}}</div>
+<!--        <div class="date">{{ article.date.string}}</div>-->
       </a>
     </div>
   </div>

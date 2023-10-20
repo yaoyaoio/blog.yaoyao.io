@@ -1,12 +1,21 @@
 // Global styles
 @import './vars.scss';
 // custom styles // 自定义样式
-@import "./theme.scss";
-// rainbow code highlighter theme 首页Hero部分
-@import './rainbow.scss';
 @import "./var.scss";
-@import './overrides.scss';
-@import "./components/code.scss";
+@import "./theme.scss";
+// rainbow code highlighter theme Home Hero
+@import './layouts/rainbow.scss';
 @import "./layouts/post.scss";
+@import "./layouts/doc.scss";
+@import "./layouts/md.scss";
+@import "./layouts/footer.scss";
 @import "./layouts/home.scss";
-@import "custom.css";
+@import "./layouts/content.scss";
+@import "./layouts/articles.scss";
+@import "./components/code.scss";
+
+.article-header {
+  h1 {
+    font-size: 30px;
+  }
+}

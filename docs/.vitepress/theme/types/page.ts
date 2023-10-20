@@ -1,3 +1,5 @@
+import {DefaultTheme} from "vitepress/theme";
+
 export interface PostPageDate {
   raw: string;
   time: number;
@@ -10,6 +12,7 @@ export interface PostPageFrontmatter {
   url: string; // 路径
   date: PostPageDate; // 日期
   cover?: string; // 封面图
+  isHome: boolean; // 是否显示在首页
   subtitle?: string; // 副标题
   path?: string; // 路径
   categories?: string[]; // 分类
@@ -45,3 +48,13 @@ export interface PostInfo extends Record<string, unknown> {
   prev?: PostPage | null;
 }
 
+
+export interface Feature {
+  icon?: DefaultTheme.FeatureIcon
+  title: string
+  details: string
+  link?: string
+  linkText?: string
+  rel?: string
+  target?: string
+}

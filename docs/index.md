@@ -5,17 +5,17 @@ layoutClass: 'm-home-layout'
 hero:
   name: YaoYao
   text: Life of Forever Freedom.
-  tagline: 路漫漫其修远兮，吾将上下而求索。
+  tagline: O ever youthful, O ever weeping.
   image:
     src: /logo.png
     alt: YaoYao
   actions:
-    - text: 最新
+    - text: News
       link: /articles
-    - text: 生活
+    - text: Life
       link: /life
       theme: alt
-    - text: 更多
+    - text: More
       link: /more
       theme: alt
 features:

@@ -2,7 +2,7 @@
 import {computed, provide, useSlots, watch} from 'vue'
 import {useRoute, useData} from 'vitepress'
 import VPBackdrop from 'vitepress/dist/client/theme-default/components/VPBackdrop.vue'
-import VPContent from './BascContent.vue'
+import VPContent from './VPContent.vue'
 import VPFooter from 'vitepress/dist/client/theme-default/components/VPFooter.vue'
 import VPLocalNav from 'vitepress/dist/client/theme-default/components/VPLocalNav.vue'
 import VPNav from 'vitepress/dist/client/theme-default/components/VPNav.vue'
