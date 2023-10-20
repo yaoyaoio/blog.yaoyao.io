@@ -46,7 +46,7 @@ export const rss: RssGenerator = async (config) => {
       description: excerpt as string,
       content: html as string,
       author: [{name: `${ID}`}],
-      date: frontmatter.date.date,
+      date: frontmatter.date,
     });
   }
 

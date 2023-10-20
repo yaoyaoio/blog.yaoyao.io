@@ -5,13 +5,14 @@ import {
   markdownImagePlugin,
   markdownCodeEnhancePlugin
 } from "./plugin/markdownPlugin";
+import {handleHeadMeta} from "./plugin/head";
 
 export default defineConfig({
   title: "YaoYao’s Blog",
-  lang: "zh-CN",
-  description: "路漫漫其修远兮，吾将上下而求索。",
+  lang: "en-US",
+  description: "Have a nice day.",
   cleanUrls: true,
-  // buildEnd: rss,
+  buildEnd: rss,
   appearance: true, // disable dark mode
   ignoreDeadLinks: true,
   base: "/",
@@ -28,7 +29,7 @@ export default defineConfig({
       {
         name: "keywords",
         content:
-          "没有关键词。",
+          "YAOYAO,耀耀",
       },
     ],
     [
@@ -38,40 +39,17 @@ export default defineConfig({
         content:
           "没什么可描述的。",
       },
-    ],
-    [
-      "script",
-      {
-        //async: true,
-        src: "https://www.googletagmanager.com/gtag/js?id=",
-      },
-    ],
-    [
-      "script",
-      {},
-      "window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', '');",
-    ],
+    ]
   ],
-  transformHead: ({pageData}) => {
-    const head: HeadConfig[] = [];
-
-    head.push([
-      "meta",
-      {property: "og:title", content: pageData.frontmatter.title},
-    ]);
-    head.push([
-      "meta",
-      {property: "og:description", content: pageData.frontmatter.title},
-    ]);
-
-    return head;
+  transformHead: (context) => {
+    return handleHeadMeta(context)
   },
   themeConfig: {
     logo: "",
     nav: [
-      {text: "首页", link: "/"},
-      {text: "文章", link: "/articles"},
-      {text: "关于", link: "/about/"},
+      {text: "Home", link: "/"},
+      {text: "Articles", link: "/articles"},
+      {text: "About", link: "/about/"},
     ],
     socialLinks: [
       {icon: "twitter", link: "https://twitter.com/yaoyaoio"},
@@ -89,8 +67,8 @@ export default defineConfig({
       `,
     },
     docFooter: {
-      prev: "上一篇",
-      next: "下一篇",
+      prev: "PREV",
+      next: "NEXT",
     }
   },
 });

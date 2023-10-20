@@ -1,0 +1,10 @@
+/* 首页样式修改 */
+.VPHero {
+  .image-bg {
+    opacity: 0.8;
+    transition: opacity 1s ease;
+  }
+  .image-container:hover .image-bg {
+    opacity: 0.4;
+  }
+}
