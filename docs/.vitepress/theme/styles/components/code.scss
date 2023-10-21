@@ -310,3 +310,13 @@ div[class*="language-"] {
     font-family: var(--vp-font-family-mono);
   }
 }
+
+:not(pre)>code {
+  font-family: "ui-monospace",SFMono-Regular,Menlo,Monaco,Consolas,Liberation-Mono,Courier-New,monospace;
+  font-size: .875em;
+  font-weight: 600;
+  color: var(--c-text);
+  background: transparent;
+  padding: 0;
+  border-radius: 0
+}

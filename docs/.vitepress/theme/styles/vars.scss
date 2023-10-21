@@ -76,3 +76,10 @@
 .DocSearch {
   --docsearch-primary-color: var(--vp-c-brand) !important;
 }
+
+/**
+* Component: Code
+* -------------------------------------------------------------------------- */
+:root {
+  --vp-code-color: black;
+}
