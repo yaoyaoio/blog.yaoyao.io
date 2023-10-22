@@ -115,7 +115,7 @@ const pageName = computed(() =>
 
 @media (min-width: 1440px) {
   .VPDoc:not(.has-sidebar) .content {
-    max-width: 784px;
+    max-width: 880px;
   }
 
   .VPDoc:not(.has-sidebar) .container {

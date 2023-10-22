@@ -1,0 +1,15 @@
+.vp-doc :not(pre, h1, h2, h3, h4, h5, h6) > code {
+  font-size: var(--vp-code-font-size);
+  color: var(--vp-code-color);
+}
+
+/* 大屏大一点 */
+@media (min-width: 1440px) {
+  .VPDoc.has-aside .content-container.content-container {
+    max-width: 100%;
+  }
+}
+
+.vp-doc div[class*='language-'], .vp-block {
+  background-color: var(--code-bg-color);
+}

@@ -2,6 +2,13 @@
  * Customize default theme styling by overriding CSS variables:
  * https://github.com/vuejs/vitepress/blob/main/src/client/theme-default/styles/vars.css
  */
+:root {
+  // font vars
+  --vp-font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+  Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  --vp-font-family-mono: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+}
+
 
 :root {
   --vp-c-brand-lightest: var(--vp-c-brand);
@@ -28,27 +35,30 @@
 :root {
   --vp-home-hero-name-color: transparent;
   --vp-home-hero-name-background: -webkit-linear-gradient(
-    120deg,
-    var(--vp-c-brand) 30%,
-    var(--vp-c-brand-next)
+                  120deg,
+                  var(--vp-c-brand) 30%,
+                  var(--vp-c-brand-next)
   );
   --vp-home-hero-image-background-image: linear-gradient(
-    -45deg,
-    var(--vp-c-brand) 30%,
-    var(--vp-c-brand-next)
+                  -45deg,
+                  var(--vp-c-brand) 30%,
+                  var(--vp-c-brand-next)
   );
   --vp-home-hero-image-filter: blur(80px);
 }
+
 @media (min-width: 640px) {
   :root {
     --vp-home-hero-image-filter: blur(120px);
   }
 }
+
 @media (min-width: 960px) {
   :root {
     --vp-home-hero-image-filter: blur(120px);
   }
 }
+
 /* Safari has a very bad performance on gradient and filter */
 .browser-safari,
 .browser-firefox {
@@ -64,6 +74,7 @@
   --vp-custom-block-tip-text: var(--vp-c-brand-darker);
   --vp-custom-block-tip-bg: var(--vp-c-brand-dimm);
 }
+
 .dark {
   --vp-custom-block-tip-border: var(--vp-c-brand);
   --vp-custom-block-tip-text: var(--vp-c-brand-lightest);
@@ -81,5 +92,5 @@
 * Component: Code
 * -------------------------------------------------------------------------- */
 :root {
-  --vp-code-color: black;
+  --vp-code-color: var(--vp-c-text-1);
 }

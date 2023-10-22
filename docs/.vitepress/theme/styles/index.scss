@@ -1,21 +1,16 @@
 // Global styles
-@import './vars.scss';
+@import './_variables.scss';
 // custom styles // 自定义样式
-@import "./var.scss";
-@import "./theme.scss";
+@import "./vars.scss";
 // rainbow code highlighter theme Home Hero
 @import './layouts/rainbow.scss';
-@import "./layouts/post.scss";
-@import "./layouts/doc.scss";
 @import "./layouts/md.scss";
 @import "./layouts/footer.scss";
-@import "./layouts/home.scss";
 @import "./layouts/content.scss";
 @import "./layouts/articles.scss";
-@import "./components/code.scss";
 
-.article-header {
-  h1 {
-    font-size: 30px;
-  }
-}
+@import "./components/vp-home.scss";
+@import "./components/code.scss";
+@import "./components/vp-doc.scss";
+
+@import "./mode/light.scss";

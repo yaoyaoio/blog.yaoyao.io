@@ -18,7 +18,7 @@ export default defineConfig({
   base: "/",
   markdown: {
     lineNumbers: false,
-    theme: "solarized-dark",
+    theme: "nord",
     config: (md) => {
       md.use(markdownImagePlugin);
       md.use(markdownCodeEnhancePlugin);
