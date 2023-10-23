@@ -19,7 +19,7 @@ const pageName = computed(() =>
 
 <template>
   <div
-    class="VPDoc"
+    class="VPDoc page-content"
     :class="{ 'has-sidebar': hasSidebar, 'has-aside': hasAside }"
   >
     <slot name="doc-top" />

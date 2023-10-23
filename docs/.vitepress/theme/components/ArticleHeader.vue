@@ -17,7 +17,7 @@ const headerStyle = () => {
   // ) {
   //   style.backgroundImage = `url(${withBase(frontmatter.value.headerImage)})`;
   // }
-  // style.backgroundImage = `url(${withBase(frontmatter.value.headerImage)})`;
+  style.backgroundImage = `url(${withBase(frontmatter.value.headerImage)})`;
   return style;
 };
 </script>
@@ -46,6 +46,9 @@ const headerStyle = () => {
 </template>
 
 <style scoped>
+.article-header{
+  height: 400px;
+}
 .article-header.use-image {
   max-width: 100%;
   position: relative;
