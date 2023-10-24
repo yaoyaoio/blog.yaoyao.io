@@ -12,6 +12,7 @@ catalog: true # 是否启用右侧目录，会覆写 `themeConfig.catalog`（可
 hide: false # 是否在首页和标签页博客列表中隐藏这篇博客（可选，默认：false）
 ---
 
+
 ## 前言
 
 自从去年开始，我一直在使用 `Surge for Mac` 和 `Surge for iOS`，我发现它们非常棒。 它们允许我捕获网络流量并根据规则进行路由到不同梯子/机场。还可以在工作中使用它进行抓包。 今年三月，`Surge` 老板宣布了一个名为 `Surge Ponte` 的新功能，类似于 `Tailsacle`。我试用了一下， 发现这个功能在网关上使用会更好。有了 `Surge Ponte`，我现在可以在离家时连接到家庭网络。 为了进行 `Surge 网关` 和 `Surge Ponte` 的实验，我借了一台 `Mac mini`。
