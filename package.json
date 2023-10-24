@@ -23,7 +23,7 @@
     "prettier-plugin-tailwindcss": "^0.5.3",
     "sass": "^1.69.3",
     "tailwindcss": "^3.1.8",
-    "vitepress": "1.0.0-rc.20",
+    "vitepress": "1.0.0-rc.23",
     "vue": "^3.3.4"
   },
   "dependencies": {

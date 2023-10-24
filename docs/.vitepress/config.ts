@@ -12,7 +12,7 @@ export default defineConfig({
   lang: "en-US",
   description: "Have a nice day.",
   cleanUrls: true,
-  buildEnd: rss,
+  // buildEnd: rss,
   appearance: true, // disable dark mode
   ignoreDeadLinks: true,
   base: "/",

@@ -10,14 +10,13 @@ const date = computed(() => frontmatter.value.date);
 
 const headerStyle = () => {
   const style = {} as { backgroundImage: string };
-  // if (
-  //     frontmatter.value.layout === "Post" &&
-  //     frontmatter.value.useHeaderImage &&
-  //     frontmatter.value.headerImage
-  // ) {
-  //   style.backgroundImage = `url(${withBase(frontmatter.value.headerImage)})`;
-  // }
-  style.backgroundImage = `url(${withBase(frontmatter.value.headerImage)})`;
+  if (
+      frontmatter.value.layout === "Post" &&
+      frontmatter.value.useHeaderImage &&
+      frontmatter.value.headerImage
+  ) {
+    style.backgroundImage = `url(${withBase(frontmatter.value.headerImage)})`;
+  }
   return style;
 };
 </script>

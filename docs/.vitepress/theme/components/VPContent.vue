@@ -4,7 +4,7 @@ import {useRoute, useData} from 'vitepress'
 import {useSidebar} from 'vitepress/dist/client/theme-default/composables/sidebar.js'
 import VPDoc from './VPDoc.vue'
 import VPHome from './VPHome.vue'
-import VPPage from 'vitepress/dist/client/theme-default/components/VPPage.vue'
+import VPPage from './VPPage.vue'
 
 const { page, frontmatter } = useData()
 const { hasSidebar } = useSidebar()

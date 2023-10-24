@@ -21,7 +21,7 @@ export function handleHeadMeta(context: TransformContext): HeadConfig[] {
 
 export function addBase(relativePath: string) {
   const host = 'https://blog.yaoyao.io'
-  if (relativePath.startsWith('/')) {
+  if (relativePath && relativePath.startsWith('/')) {
     return host + relativePath
   } else {
     return host + '/' + relativePath
