@@ -2,6 +2,7 @@
 import VPHomeHero from './VPHomeHero.vue'
 import VPHomeFeatures from 'vitepress/dist/client/theme-default/components/VPHomeFeatures.vue'
 import HomePostList from "./HomePostList.vue";
+import HomePostPreview from "./HomePostPreview.vue";
 </script>
 
 <template>
@@ -16,7 +17,7 @@ import HomePostList from "./HomePostList.vue";
       </template>
     </VPHomeHero>
     <VPHomeFeatures/>
-    <HomePostList/>
+    <HomePostPreview/>
     <Content/>
   </div>
 </template>

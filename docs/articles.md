@@ -1,6 +1,6 @@
 ---
 title: Articles
-layout: doc
+layout: page
 aside: false
 ---
 <Archives/>

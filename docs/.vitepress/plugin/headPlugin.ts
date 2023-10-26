@@ -10,7 +10,7 @@ export function handleHeadMeta(context: TransformContext): HeadConfig[] {
   const ogImage: HeadConfig = ["meta", {property: "og:image", content: pageData.frontmatter.image || "https://blog.yaoyao.io/logo2.jpeg"}];
   head.push(ogUrl, ogTitle, ogDescription, ogImage);
 
-  const twitterCard: HeadConfig = ["meta", {name: "twitter:card", content: "summary"}];
+  const twitterCard: HeadConfig = ["meta", {name: "twitter:card", content: "summary_large_image"}];
   const twitterTitle: HeadConfig = ["meta", {name: "twitter:title", content: pageData.title || context.title}];
   const twitterImage: HeadConfig = ["meta", {name: "twitter:image", content: pageData.frontmatter.image || "https://blog.yaoyao.io/logo2.jpeg"}];
   const twitterDescription: HeadConfig = ["meta", {name: "twitter:description", content: pageData.description || context.description}];
