@@ -1,24 +1,36 @@
 <template>
-  <div style="padding-top: 10px;">
-    <div v-for="articleSet in filteredPosts">
-      <div class="year">
-        {{ articleSet.year }}
-      </div>
-      <a :href="withBase(article.url)" v-for="(article, index) in articleSet.data" :key="index" class="article">
-        <div class="titleDiv">
-          <div class="title-o"></div>
-          {{ article.title }}
+  <div class="page">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 xl:max-w-4xl xl:px-0">
+      <div class="divide-y divide-gray-200 dark:divide-slate-200/5">
+        <div v-for="articleSet in filteredPosts">
+          <div class="pt-8 pb-4 text-2xl font-bold">
+            <h1>{{ articleSet.year }}</h1>
+          </div>
+          <ul class="divide-y divide-gray-200 dark:divide-slate-200/5">
+            <li class="py-4" v-for="post in articleSet.data" :key="post">
+              <div class="flex gap-4">
+                <dl class="min-w-[130px]">
+                  <dd class="text-base leading-6 font-semibold">
+                    <time datetime="{{post.date.defaultDate}}">{{ post.date.defaultDate }}</time>
+                  </dd>
+                </dl>
+                <a class="break-all font-medium"
+                   :href="withBase(post.url)">
+                  {{ post.title }}
+                </a>
+              </div>
+            </li>
+          </ul>
         </div>
-<!--        <div class="date">{{ article.date.string}}</div>-->
-      </a>
+      </div>
     </div>
   </div>
 </template>
 
 <script lang="ts" setup>
-import {getPostsByYear} from "../utils";
 import {computed} from "vue";
-import {withBase, useData} from "vitepress";
+import {withBase} from "vitepress";
+import {getPostsByYear} from "../utils";
 import {usePosts} from "../post";
 
 
@@ -28,10 +40,4 @@ const filteredPosts = computed(() => {
 </script>
 
 <style scoped>
-.year {
-  padding: 16px 0 8px 0;
-  font-size: 1.5rem;
-  font-weight: 600;
-  font-family: var(--date-font-family);
-}
 </style>

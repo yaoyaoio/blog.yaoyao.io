@@ -1,5 +1,5 @@
 import {createContentLoader} from "vitepress";
-import {formatShowDate} from "./utils";
+import {formatPostDate, formatShowDate} from "./utils";
 import type {PostPageDate, PostPageFrontmatter} from "./types";
 
 declare const data: PostPageFrontmatter[];
@@ -47,10 +47,6 @@ function formatDate(raw: string): PostPageDate {
     time: +date,
     raw: raw,
     formatShowDate: formatShowDate(date),
-    string: date.toLocaleDateString("en-US", {
-      year: "numeric",
-      month: "long",
-      day: "numeric",
-    }),
+    defaultDate:formatPostDate(raw),
   };
 }

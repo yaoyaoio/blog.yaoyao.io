@@ -1,3 +1,7 @@
+// tailwindcss
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 // Global styles
 @import './_variables.scss';
 // custom styles // 自定义样式
@@ -14,3 +18,4 @@
 @import "./components/vp-doc.scss";
 
 @import "./mode/light.scss";
+

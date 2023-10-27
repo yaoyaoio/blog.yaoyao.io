@@ -1,12 +1,11 @@
 <script setup lang="ts">
 import VPHomeHero from './VPHomeHero.vue'
 import VPHomeFeatures from 'vitepress/dist/client/theme-default/components/VPHomeFeatures.vue'
-import HomePostList from "./HomePostList.vue";
-import HomePostPreview from "./HomePostPreview.vue";
+import HomePreview from "./HomePreview.vue";
 </script>
 
 <template>
-  <div class="VPHome">
+  <div class="Home">
     <slot name="home-hero-before"/>
     <VPHomeHero>
       <template #home-hero-info>
@@ -16,24 +15,18 @@ import HomePostPreview from "./HomePostPreview.vue";
         <slot name="home-hero-image"/>
       </template>
     </VPHomeHero>
-    <VPHomeFeatures/>
-    <HomePostPreview/>
+    <HomePreview/>
     <Content/>
   </div>
 </template>
 
 <style scoped>
-.VPHome {
+.Home {
   padding-bottom: 96px;
 }
 
-.VPHome :deep(.VPHomeSponsors) {
-  margin-top: 112px;
-  margin-bottom: -128px;
-}
-
 @media (min-width: 768px) {
-  .VPHome {
+  .Home {
     padding-bottom: 128px;
   }
 }

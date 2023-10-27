@@ -1,18 +1,20 @@
-import {defineConfig, HeadConfig} from "vitepress";
+import {defineConfigWithTheme} from "vitepress";
 import {rss} from "./genFeed.js";
 
 import {
   markdownImagePlugin,
   markdownCodeEnhancePlugin
-} from "./plugin/markdownPlugin";
-import {handleHeadMeta} from "./plugin/headPlugin";
+} from "./plugins/markdownPlugin";
 
-export default defineConfig({
+import {handleHeadMeta} from "./plugins/headPlugin";
+import {OneThemeConfig} from "./theme/config";
+
+export default defineConfigWithTheme<OneThemeConfig>({
   title: "YaoYao’s Blog",
   lang: "en-US",
   description: "Have a nice day.",
   cleanUrls: true,
-  // buildEnd: rss,
+  buildEnd: rss,
   appearance: true, // disable dark mode
   ignoreDeadLinks: true,
   base: "/",
@@ -60,7 +62,7 @@ export default defineConfig({
       label: "本文导览",
     },
     lastUpdated: {
-      text: "最后更新时间"
+      text: "Last Updated",
     },
     footer: {
       message: `<a href="https://blog.yaoyao.io/">YaoYao’s Blog</a>.`,
@@ -70,6 +72,19 @@ export default defineConfig({
     docFooter: {
       prev: "PREV",
       next: "NEXT",
+    },
+    search: {
+      provider: "algolia",
+      options: {
+        appId: "CZDQHBIKSR",
+        apiKey: "76af0cd40f7c0fc5f78456de2a842849",
+        indexName: "yaoyao",
+      }
+    },
+    personalInfo:{
+      name: "YaoYao",
+      avatar:"/logo.png",
+      description: "Have a nice day.",
     }
   },
 });

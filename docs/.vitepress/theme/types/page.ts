@@ -3,8 +3,8 @@ import {DefaultTheme} from "vitepress/theme";
 export interface PostPageDate {
   raw: string;
   time: number;
-  string: string;
   formatShowDate: string;
+  defaultDate: string;
 }
 
 export interface PostPageFrontmatter {
@@ -12,7 +12,6 @@ export interface PostPageFrontmatter {
   url: string; // 路径
   date: PostPageDate; // 日期
   cover?: string; // 封面图
-  isHome: boolean; // 是否显示在首页
   subtitle?: string; // 副标题
   path?: string; // 路径
   categories?: string[]; // 分类

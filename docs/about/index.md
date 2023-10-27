@@ -1,7 +1,7 @@
 ---
 title: About # 文档标题（必须）
 date: 2015-11-01 # 文档日期，会显示在文章头部（可选）
-layout: page # 文档类型
+layout: doc # 文档类型
 hide: true # 文档是否隐藏（可选）
 ---
 

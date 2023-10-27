@@ -114,6 +114,7 @@ export interface PostDataWithDate {
 
 export const getPostsByYear = (posts: PostPageFrontmatter[]) => {
   const formatPages = {} as Record<string, PostPageFrontmatter>;
+
   const formatPagesArr = [] as Array<{
     year: string;
     data: PostPageFrontmatter[];
@@ -141,4 +142,18 @@ export const getPostsByYear = (posts: PostPageFrontmatter[]) => {
     });
   }
   return formatPagesArr;
+}
+
+
+export const formatPostDate = (date: string) => {
+  const dateStr = formatDateString(date).replace(/-/g, "/");
+  const dateObj = new Date(dateStr);
+
+  const info = {
+    year: dateObj.getFullYear(),
+    month: String(dateObj.getMonth() + 1).padStart(2, "0"),
+    day: String(dateObj.getDate()).padStart(2, "0")
+  };
+
+  return `${info.year}-${info.month}-${info.day}`;
 }

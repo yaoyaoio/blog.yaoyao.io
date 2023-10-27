@@ -57,7 +57,7 @@ sudo add-apt-repository "deb [arch=amd64] <https://download.docker.com/linux/ubu
 
 ```bash
 sudo apt-get -y update
-sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugins docker-compose-plugins
 ```
 
 ### Hello World

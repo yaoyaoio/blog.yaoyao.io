@@ -10,7 +10,7 @@ hero:
     src: /logo.png
     alt: YaoYao
   actions:
-    - text: News
+    - text: Latest
       link: /articles
     - text: Life
       link: /life
