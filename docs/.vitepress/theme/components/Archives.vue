@@ -10,11 +10,11 @@
             <li class="py-4" v-for="post in articleSet.data" :key="post">
               <div class="flex gap-4">
                 <dl class="min-w-[130px]">
-                  <dd class="text-base leading-6 font-semibold">
+                  <dd class="text-base leading-6 font-semibold text-gray-500">
                     <time datetime="{{post.date.defaultDate}}">{{ post.date.defaultDate }}</time>
                   </dd>
                 </dl>
-                <a class="break-all font-medium"
+                <a class="break-all font-medium hover:text-sky-500"
                    :href="withBase(post.url)">
                   {{ post.title }}
                 </a>
