@@ -108,7 +108,7 @@ export const resolveDate = (date: string, type: "year" | "month" | "day") => {
 };
 
 export interface PostDataWithDate {
-  date: string;
+  year: string;
   data: PostPageFrontmatter[];
 }
 
