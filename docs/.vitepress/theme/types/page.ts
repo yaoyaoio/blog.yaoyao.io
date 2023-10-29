@@ -24,7 +24,7 @@ export interface PostPageFrontmatter {
   headerMask?: string; // 遮罩
   headerImageCredit?: string; // 图片来源
   headerImageCreditLink?: string; // 图片来源链接
-  catalog?: boolean; // 是否显示目录
+  aside?: boolean; // 是否显示侧边栏
   tags?: string[]; // 标签
   hide?: boolean; // 是否隐藏
 }

@@ -8,7 +8,7 @@ defineProps<{
 </script>
 
 <template>
-  <div class="xlog-post-cover rounded-t-2xl overflow-hidden flex items-center relative w-full aspect-video border-b">
+  <div class="post-cover rounded-t-2xl overflow-hidden flex items-center relative w-full aspect-video border-b">
     <span class="inline-flex justify-center w-full h-full overflow-hidden">
       <span class="inline-flex justify-center relative w-full h-full">
         <img alt="cover" loading="lazy" width="624" height="351" decoding="async" data-nimg="1"
