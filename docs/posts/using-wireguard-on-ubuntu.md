@@ -7,7 +7,7 @@ tags:
 - WireGuard
 layout: Post
 useHeaderImage: true # 是否在博客中显示封面图（可选，默认：false）
-headerImage: /img/in-post/ideun-kim-220908-morning.webp # 博客封面图（必须，即使上一项选了 false，因为图片也需要在首页显示）
+headerImage: /img/in-post/cover-ubuntu-wg.webp # 博客封面图（必须，即使上一项选了 false，因为图片也需要在首页显示）
 headerMask: rgba(40,57,101, .4)  # 封面图遮罩（可选）
 headerImageCredit: Ideun Kim # 图片来源，比如图片作者的名字（可选，只在 "useHeaderImage: true" 时有效）
 headerImageCreditLink: https://www.artstation.com/artwork/8wNkQx  # 图片来源的链接（可选，只在 "useHeaderImage: true" 时有效）

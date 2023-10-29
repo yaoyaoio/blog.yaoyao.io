@@ -1,10 +1,7 @@
-import {DefaultTheme} from "vitepress/theme";
-
 export interface PostPageDate {
   raw: string;
-  time: number;
-  formatShowDate: string;
-  defaultDate: string;
+  time: number; // 1609459200000
+  defaultDate: string; // 2023-01-01
 }
 
 export interface PostPageFrontmatter {
@@ -18,7 +15,7 @@ export interface PostPageFrontmatter {
   excerpt: string | undefined; // 摘要
   description: string | undefined; // 描述
   author?: string; // 作者
-  layout?: string; // 布局
+  layout?: string; // 布局类型
   useHeaderImage?: boolean; // 是否使用
   headerImage?: string; // 封面
   headerMask?: string; // 遮罩
@@ -30,30 +27,10 @@ export interface PostPageFrontmatter {
 }
 
 export interface PostPage {
+  id?: string;
   title?: string;
-  link?: string;
-  text?: string;
-}
-
-export interface PostInfo extends Record<string, unknown> {
-  title: string;
-  subtitle?: string;
-  date?: string | null;
-  tags?: string[];
-  headerImage: string;
-  excerpt?: string;
+  url?: string;
   frontmatter: PostPageFrontmatter;
   next?: PostPage | null;
   prev?: PostPage | null;
-}
-
-
-export interface Feature {
-  icon?: DefaultTheme.FeatureIcon
-  title: string
-  details: string
-  link?: string
-  linkText?: string
-  rel?: string
-  target?: string
 }

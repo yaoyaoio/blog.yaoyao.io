@@ -7,7 +7,7 @@ hero:
   text: Life of Forever Freedom.
   tagline: O ever youthful, O ever weeping.
   image:
-    src: /logo.png
+    src: /img/logo/logo-card.png
     alt: YaoYao
   actions:
     - text: Latest

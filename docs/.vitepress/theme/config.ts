@@ -6,7 +6,7 @@ export interface PersonalConfig {
   description: string;
 }
 
-export declare interface OneThemeConfig extends DefaultTheme.Config {
+export declare interface ThemeConfig extends DefaultTheme.Config {
   // define your custom config here
   personalInfo: PersonalConfig;
 }

@@ -8,10 +8,11 @@ headerImage: https://i.yaoyao.io/blog/unsplash-macmini-1.jpg # 博客封面图�
 headerMask: rgba(40,57,101, .4)  # 封面图遮罩（可选）
 headerImageCredit: Ed Orozco # 图片来源，比如图片作者的名字（可选，只在 "useHeaderImage: true" 时有效）
 headerImageCreditLink: https://unsplash.com/photos/IITaO-_w58A  # 图片来源的链接（可选，只在 "useHeaderImage: true" 时有效）
-catalog: true # 是否启用右侧目录，会覆写 `themeConfig.catalog`（可选，默认：false）
+aside: true # 是否启用右侧目录，会覆写 `themeConfig.catalog`（可选，默认：false）
 hide: false # 是否在首页和标签页博客列表中隐藏这篇博客（可选，默认：false）
 ---
 
+---
 
 ## 前言
 

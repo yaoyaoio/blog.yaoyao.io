@@ -4,7 +4,7 @@ date: 2023-03-30
 author: 耀耀
 isHome: true
 useHeaderImage: true
-headerImage: /img/in-post/ideun-kim-220908-morning.webp
+headerImage: /img/in-post/cover-ebpf.webp
 headerMask: rgba(40,57,101, .4)
 headerImageCredit: Ideun Kim
 headerImageCreditLink: https://www.artstation.com/artwork/8wNkQx

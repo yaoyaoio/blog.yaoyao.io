@@ -46,7 +46,6 @@ function formatDate(raw: string): PostPageDate {
   return {
     time: +date,
     raw: raw,
-    formatShowDate: formatShowDate(date),
     defaultDate:formatPostDate(raw),
   };
 }

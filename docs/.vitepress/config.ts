@@ -7,9 +7,9 @@ import {
 } from "./plugins/markdownPlugin";
 
 import {handleHeadMeta} from "./plugins/headPlugin";
-import {OneThemeConfig} from "./theme/config";
+import {ThemeConfig} from "./theme/config";
 
-export default defineConfigWithTheme<OneThemeConfig>({
+export default defineConfigWithTheme<ThemeConfig>({
   title: "YaoYao’s Blog",
   lang: "en-US",
   description: "Have a nice day.",
@@ -83,7 +83,7 @@ export default defineConfigWithTheme<OneThemeConfig>({
     },
     personalInfo:{
       name: "YaoYao",
-      avatar:"/logo.png",
+      avatar:"/img/logo/logo-card.png",
       description: "Have a nice day.",
     }
   },
