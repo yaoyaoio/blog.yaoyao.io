@@ -8,16 +8,16 @@ export interface PersonalConfig {
 
 export interface GiscusConfig {
   repo: string;
-  // repoId?: string;
-  // category?: string;
-  // categoryId?: string;
-  // mapping?: string;
-  // reactionsEnabled?: string;
-  // emitMetadata?: string;
-  // theme?: string;
-  // lang?: string;
-  // loading?: string;
-  // crossorigin?: string;
+  repoId?: string;
+  category?: string;
+  categoryId?: string;
+  mapping?: string;
+  reactionsEnabled?: string;
+  emitMetadata?: string;
+  theme?: string;
+  lang?: string;
+  loading?: string;
+  crossorigin?: string;
 }
 
 
