@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import VPHomeHero from './VPHomeHero.vue'
 import HomePreview from "./HomePreview.vue";
+import Comment from "./Comment.vue";
 </script>
 
 <template>

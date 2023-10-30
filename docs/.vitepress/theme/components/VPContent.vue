@@ -5,6 +5,7 @@ import {useSidebar} from 'vitepress/dist/client/theme-default/composables/sideba
 import VPDoc from './VPDoc.vue'
 import VPHome from './VPHome.vue'
 import VPPage from './VPPage.vue'
+import Comment from "./Comment.vue";
 
 const { page, frontmatter } = useData()
 const { hasSidebar } = useSidebar()
@@ -52,6 +53,7 @@ const { hasSidebar } = useSidebar()
       <template #aside-ads-after><slot name="aside-ads-after" /></template>
       <template #aside-bottom><slot name="aside-bottom" /></template>
     </VPDoc>
+    <Comment/>
   </div>
 </template>
 

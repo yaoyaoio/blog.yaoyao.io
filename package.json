@@ -27,6 +27,7 @@
     "vue": "^3.3.4"
   },
   "dependencies": {
+    "@giscus/vue": "^2.3.0",
     "@sentry/tracing": "^7.64.0",
     "@sentry/vue": "^7.64.0",
     "@vueuse/core": "^10.4.0",

@@ -85,6 +85,17 @@ export default defineConfigWithTheme<ThemeConfig>({
       name: "YaoYao",
       avatar:"/img/logo/logo-card.png",
       description: "Have a nice day.",
+    },
+    giscus:{
+      repo: "yaoyaoio/blog-comments",
+      repoId:"R_kgDOHX02Ew",
+      category:"Announcements",
+      categoryId:"DIC_kwDOHX02E84CPN8T",
+      mapping:"title",
+      reactionsEnabled:"1",
+      emitMetadata:"0",
+      theme:"light",
+      lang:"zh-CN",
     }
   },
 });

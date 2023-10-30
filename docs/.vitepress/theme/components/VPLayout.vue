@@ -9,6 +9,7 @@ import VPNav from 'vitepress/dist/client/theme-default/components/VPNav.vue'
 import VPSidebar from 'vitepress/dist/client/theme-default/components/VPSidebar.vue'
 import VPSkipLink from 'vitepress/dist/client/theme-default/components/VPSkipLink.vue'
 import {useSidebar, useCloseSidebarOnEscape} from 'vitepress/dist/client/theme-default/composables/sidebar.js'
+import Comment from "./Comment.vue";
 
 
 const {
@@ -130,7 +131,6 @@ provide('hero-image-slot-exists', heroImageSlotExists)
         <slot name="aside-ads-after"/>
       </template>
     </VPContent>
-
     <VPFooter/>
     <slot name="layout-bottom"/>
   </div>
