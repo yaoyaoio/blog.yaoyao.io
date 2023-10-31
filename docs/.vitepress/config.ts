@@ -107,7 +107,7 @@ export default defineConfigWithTheme<ThemeConfig>({
       reactionsEnabled:"1",
       emitMetadata:"0",
       theme:"light",
-      lang:"zh-CN",
+      lang:"en",
     }
   },
 });
