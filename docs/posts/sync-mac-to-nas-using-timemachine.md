@@ -3,7 +3,7 @@ title: 使用 Time Machine 将 Mac 数据备份到群晖 NAS
 date: 2022-12-01
 author: 耀耀
 layout: Post
-headerImage: /img/in-post/ideun-kim-220908-morning.webp # 博客封面图（必须，即使上一项选了 false，因为图片也需要在首页显示）
+headerImage: /img/in-post/cover-mac-sync-nas.webp # 博客封面图（必须，即使上一项选了 false，因为图片也需要在首页显示）
 ---
 
 ---
