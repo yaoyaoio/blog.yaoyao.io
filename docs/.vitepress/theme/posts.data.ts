@@ -31,7 +31,7 @@ export default createContentLoader("/*/*.md", {
         headerMask: frontmatter.headerMask,
         headerImageCredit: frontmatter.headerImageCredit,
         headerImageCreditLink: frontmatter.headerImageCreditLink,
-        catalog: frontmatter.catalog || false,
+        aside: frontmatter.aside || false,
         hide: frontmatter.hide || false,
         tags: frontmatter.tags || [],
 

@@ -3,7 +3,7 @@ title: 使用 群晖 NAS 和 Calibre-Web 搭建个人图书馆
 date: 2022-12-21
 author: 耀耀
 layout: Post
-headerImage: /img/in-post/ideun-kim-220908-morning.webp # 博客封面图（必须，即使上一项选了 false，因为图片也需要在首页显示）
+headerImage: /img/in-post/cover-nas-library.webp # 博客封面图（必须，即使上一项选了 false，因为图片也需要在首页显示）
 ---
 
 ---
