@@ -42,6 +42,18 @@ export default defineConfigWithTheme<ThemeConfig>({
         content:
           "没什么可描述的。",
       },
+    ],
+    [
+      'script',
+      { async: '', src: 'https://www.googletagmanager.com/gtag/js?id=G-VTV8TERKLB' }
+    ],
+    [
+      'script',
+      {},
+      `window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-VTV8TERKLB');`
     ]
   ],
   transformHead: (context) => {
