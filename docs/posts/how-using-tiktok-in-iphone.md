@@ -2,7 +2,7 @@
 title: 如何在 iPhone 上使用 TikTok
 date: 2023-03-29
 author: 耀耀
-layout: Post
+layout: post
 useHeaderImage: true # 是否在博客中显示封面图（可选，默认：false）
 headerImage: /img/in-post/cover-iphone-tiktok.webp # 博客封面图（必须，即使上一项选了 false，因为图片也需要在首页显示）
 headerMask: rgba(40,57,101, .4)  # 封面图遮罩（可选）

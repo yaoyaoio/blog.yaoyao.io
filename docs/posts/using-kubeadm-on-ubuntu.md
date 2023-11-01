@@ -2,7 +2,7 @@
 title: 在 Ubuntu 22.04 上使用 kubeadm  运行 kubernetes
 date: 2022-05-26 # 博客发表日期（可选）
 author: 耀耀 # 博客作者（可选，不填的话会使用 `themeConfig.personalInfo.name`）
-layout: Post # 必须
+layout: post
 useHeaderImage: true # 是否在博客中显示封面图（可选，默认：false）
 headerImage: /img/in-post/ideun-kim-220908-morning.webp # 博客封面图（必须，即使上一项选了 false，因为图片也需要在首页显示）
 headerMask: rgba(40,57,101, .4)  # 封面图遮罩（可选）

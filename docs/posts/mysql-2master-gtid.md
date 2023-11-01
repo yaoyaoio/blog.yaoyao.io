@@ -2,7 +2,7 @@
 title: "MySQL 双主基于 GTID 复制方案"
 date: "2021-09-01"
 author: 耀耀
-layout: Post # 必须
+layout: post
 useHeaderImage: true # 是否在博客中显示封面图（可选，默认：false）
 headerImage: /img/in-post/default.jpeg # 博客封面图（必须，即使上一项选了 false，因为图片也需要在首页显示）
 headerMask: rgba(40,57,101, .4)  # 封面图遮罩（可选）

@@ -2,7 +2,7 @@
 title: 2022 简单总结
 date: 2022-12-31
 author: 耀耀
-layout: Post
+layout: post
 hide: true # (可选) 是否隐藏文章，true 则隐藏文章，false 则不隐藏
 headerImage: /img/in-post/ideun-kim-220908-morning.webp # 博客封面图（必须，即使上一项选了 false，因为图片也需要在首页显示）
 ---

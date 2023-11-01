@@ -34,7 +34,7 @@ const { hasSidebar } = useSidebar()
     </VPHome>
 
     <component
-        v-else-if="frontmatter.layout && frontmatter.layout !== 'doc' && frontmatter.layout !== 'Post'"
+        v-else-if="frontmatter.layout && frontmatter.layout !== 'doc' && frontmatter.layout !== 'post'"
         :is="frontmatter.layout"
     />
 
