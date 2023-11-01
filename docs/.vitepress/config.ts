@@ -6,7 +6,7 @@ import {
   markdownCodeEnhancePlugin
 } from "./plugins/markdownPlugin";
 
-import {handleHeadMeta} from "./plugins/headPlugin";
+import {transformHeadMeta} from "./plugins/headPlugin";
 import {ThemeConfig} from "./theme/config";
 
 export default defineConfigWithTheme<ThemeConfig>({
@@ -57,7 +57,7 @@ export default defineConfigWithTheme<ThemeConfig>({
     ]
   ],
   transformHead: (context) => {
-    return handleHeadMeta(context)
+    return transformHeadMeta(context)
   },
   themeConfig: {
     logo: "",
