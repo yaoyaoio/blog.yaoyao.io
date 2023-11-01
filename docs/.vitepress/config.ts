@@ -15,7 +15,7 @@ export default defineConfigWithTheme<ThemeConfig>({
   description: "Have a nice day.",
   cleanUrls: true,
   buildEnd: rss,
-  appearance: false, // disable dark mode
+  appearance: true, // disable dark mode
   ignoreDeadLinks: true,
   base: "/",
   markdown: {

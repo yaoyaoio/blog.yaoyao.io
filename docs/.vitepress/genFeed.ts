@@ -6,14 +6,14 @@ import {
   createContentLoader,
   type SiteConfig,
 } from "vitepress";
-import {OneThemeConfig} from "./theme/config";
+import {ThemeConfig} from "./theme/config";
 
 // 限制只抓取最新15篇文章,防止rss文件过大
 const MAX_FEED_ITEMS = 15;
 const ID: string = "yaoyao";
 const baseUrl: string = `https://blog.yaoyao.io`;
 
-type RssGenerator = (config: SiteConfig<OneThemeConfig>) => Promise<void>;
+type RssGenerator = (config: SiteConfig<ThemeConfig>) => Promise<void>;
 
 export const rss: RssGenerator = async (config) => {
   const feed: Feed = new Feed({
