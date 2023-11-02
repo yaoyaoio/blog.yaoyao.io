@@ -6,7 +6,7 @@
           <div class="year pt-8 pb-4 text-2xl font-bold">
             <h1>{{ item.year }}</h1>
           </div>
-          <ul class="divide-y divide-gray-200 dark:divide-slate-200/5">
+          <ul class="divide-y divide-gray-200 dark:divide-gray-700">
             <li class="py-4" v-for="subItem in item.data" :key="subItem">
               <div class="flex gap-4">
                 <dl class="min-w-[130px]">
