@@ -20,6 +20,18 @@
 @import "./mode/light.scss";
 
 
-.product-name{
-  @apply font-black;
+@layer base {
+  body {
+    @apply dark:bg-black;
+  }
+}
+
+*,
+*:after,
+*:before {
+  border-color: var(--border-color);
+}
+
+html.dark {
+  color-scheme: dark;
 }

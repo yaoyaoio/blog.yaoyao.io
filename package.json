@@ -1,11 +1,11 @@
 {
-  "name": "blog.yaoyao.io",
+  "name": "yaoyao.io",
   "private": true,
   "type": "module",
   "author": {
     "name": "@yaoyao",
     "email": "i@yaoyao.io",
-    "url": "https://github.com/yaoyaoio"
+    "url": "https://github.com/yaoyaoio/yaoyao.io"
   },
   "scripts": {
     "docs:dev": "vitepress dev docs",
@@ -21,19 +21,19 @@
     "gray-matter": "^4.0.2",
     "prettier": "^3.0.2",
     "prettier-plugin-tailwindcss": "^0.5.3",
-    "sass": "^1.69.3",
-    "tailwindcss": "^3.1.8",
-    "vitepress": "1.0.0-rc.23",
+    "sass": "^1.69.5",
+    "tailwindcss": "^3.3.5",
+    "vitepress": "1.0.0-rc.24",
     "vue": "^3.3.4"
   },
   "dependencies": {
     "@giscus/vue": "^2.3.0",
-    "@sentry/tracing": "^7.64.0",
-    "@sentry/vue": "^7.64.0",
     "@vueuse/core": "^10.4.0",
-    "artalk": "^2.5.5",
+    "medium-zoom": "^1.0.8",
+    "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-nested": "^6.0.1",
     "postcss-nesting": "^12.0.1",
-    "tailwindcss-dark-mode": "^1.1.7"
+    "postcss-preset-env": "^7.7.2",
+    "vitepress-plugin-rss": "^0.1.0"
   }
 }

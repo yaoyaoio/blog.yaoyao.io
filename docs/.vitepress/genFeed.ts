@@ -1,3 +1,4 @@
+// @ts-ignore
 import path from "path";
 import {writeFileSync} from "fs";
 import {Feed} from "feed";

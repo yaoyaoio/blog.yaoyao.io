@@ -1,5 +1,4 @@
 import {defineConfigWithTheme} from "vitepress";
-import {rss} from "./genFeed.js";
 
 import {
   markdownImagePlugin,
@@ -8,6 +7,8 @@ import {
 
 import {transformHeadMeta} from "./plugins/headPlugin";
 import {ThemeConfig} from "./theme/config";
+import {rss} from "./genFeed.js";
+
 
 export default defineConfigWithTheme<ThemeConfig>({
   title: "YaoYao’s Blog",
@@ -15,7 +16,7 @@ export default defineConfigWithTheme<ThemeConfig>({
   description: "Have a nice day.",
   cleanUrls: true,
   buildEnd: rss,
-  appearance: true, // disable dark mode
+  appearance: true,
   ignoreDeadLinks: true,
   base: "/",
   markdown: {
@@ -32,7 +33,7 @@ export default defineConfigWithTheme<ThemeConfig>({
       {
         name: "keywords",
         content:
-          "YAOYAO,耀耀",
+            "YAOYAO,耀耀",
       },
     ],
     [
@@ -40,12 +41,12 @@ export default defineConfigWithTheme<ThemeConfig>({
       {
         name: "description",
         content:
-          "没什么可描述的。",
+            "没什么可描述的。",
       },
     ],
     [
       'script',
-      { async: '', src: 'https://www.googletagmanager.com/gtag/js?id=G-VTV8TERKLB' }
+      {async: '', src: 'https://www.googletagmanager.com/gtag/js?id=G-VTV8TERKLB'}
     ],
     [
       'script',
@@ -93,21 +94,21 @@ export default defineConfigWithTheme<ThemeConfig>({
         indexName: "yaoyao",
       }
     },
-    personalInfo:{
+    personalInfo: {
       name: "YaoYao",
-      avatar:"/img/logo/logo-card.png",
+      avatar: "/img/logo/logo-card.png",
       description: "Have a nice day.",
     },
-    giscus:{
+    giscus: {
       repo: "yaoyaoio/blog-comments",
-      repoId:"R_kgDOHX02Ew",
-      category:"Announcements",
-      categoryId:"DIC_kwDOHX02E84CPN8T",
-      mapping:"title",
-      reactionsEnabled:"1",
-      emitMetadata:"0",
-      theme:"light",
-      lang:"en",
+      repoId: "R_kgDOHX02Ew",
+      category: "Announcements",
+      categoryId: "DIC_kwDOHX02E84CPN8T",
+      mapping: "title",
+      reactionsEnabled: "1",
+      emitMetadata: "0",
+      theme: "light",
+      lang: "en",
     }
   },
 });

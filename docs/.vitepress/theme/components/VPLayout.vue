@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import {computed, provide, useSlots, watch} from 'vue'
+import {computed, provide, useSlots, watch, onMounted} from 'vue'
 import {useRoute, useData} from 'vitepress'
 import VPBackdrop from 'vitepress/dist/client/theme-default/components/VPBackdrop.vue'
 import VPContent from './VPContent.vue'
@@ -29,6 +29,26 @@ const slots = useSlots()
 const heroImageSlotExists = computed(() => !!slots['home-hero-image'])
 
 provide('hero-image-slot-exists', heroImageSlotExists)
+
+onMounted(() => {
+  console.log('VPLayout.vue mounted')
+  // const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+  // console.log('prefersDarkScheme', prefersDarkScheme)
+  // if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+  //   document.documentElement.classList.add('dark')
+  // } else {
+  //   document.documentElement.classList.remove('dark')
+  // }
+  // console.log('localStorage.theme', localStorage.theme)
+  // localStorage.theme = 'light'
+  //
+  // localStorage.theme = 'dark'
+  //
+  // localStorage.removeItem('theme')
+});
+
+
+
 </script>
 
 <template>

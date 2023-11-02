@@ -11,8 +11,7 @@ defineProps<{
 
 <template>
   <a
-      class="rounded-2xl flex flex-col items-center group relative
-  border sm:hover:bg-hover transition-all hover:opacity-100"
+      class="rounded-2xl flex flex-col items-center group relative border sm:hover:bg-hover transition-all hover:opacity-100"
       :href="withBase(post.url)"
   >
     <PostCover :post="post"/>
@@ -20,7 +19,7 @@ defineProps<{
                 space-y-2 sm:px-5 sm:py-4 h-auto sm:h-[163px]">
       <!--标题-->
       <div class="space-y-2 line-clamp-3 h-[75px]">
-        <h2 class="font-bold text-zinc-700 text-base">
+        <h2 class="font-bold text-zinc-700 text-base dark:text-zinc-300">
           {{ post.title }}
         </h2>
         <div class="text-zinc-500 line-clamp-3" style="word-break:break-word">

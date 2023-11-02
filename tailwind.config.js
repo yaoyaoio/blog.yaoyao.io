@@ -1,15 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: "media",
-  // ...
-  purge: {
-    content: [
-      './docs/.vitepress/**/*.js',
-      './docs/.vitepress/**/*.vue',
-      './docs/.vitepress/**/*.ts',
-    ],
-    options: {
-      safelist: ['html', 'body'],
-    },
-  }
-}
+  darkMode: 'class',
+  content: [
+    './docs/**/*.{html,js,vue,ts,md}',
+    './docs/.vitepress/**/*.{html,js,vue,ts,md}',
+  ],
+};

@@ -7,7 +7,7 @@ export default {
   plugins: [
     postcssNested,
     tailwind({
-      content: ['./docs/.vitepress/theme/**/*.vue'],
+      content: ['./docs/.vitepress/theme_backup/**/*.vue'],
       plugins: [tailwindTypography,tailwindLineClamp]
     })
 
