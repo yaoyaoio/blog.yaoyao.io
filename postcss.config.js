@@ -1,15 +1,9 @@
-import postcssNested from 'postcss-nested'
-import tailwind from 'tailwindcss'
-import tailwindTypography from '@tailwindcss/typography'
-import tailwindLineClamp from '@tailwindcss/line-clamp'
-
+/** @type {import(postcss-load-cofnig)} */
 export default {
-  plugins: [
-    postcssNested,
-    tailwind({
-      content: ['./docs/.vitepress/theme_backup/**/*.vue'],
-      plugins: [tailwindTypography,tailwindLineClamp]
-    })
-
-  ]
+  plugins: {
+    tailwindcss: {
+      config: './tailwind.config.js',
+    },
+    autoprefixer: {},
+  },
 }
