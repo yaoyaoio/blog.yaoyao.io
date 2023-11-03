@@ -1,5 +1,4 @@
 import tailwindTypography from '@tailwindcss/typography' // 排版插件
-import tailwindLineClamp from '@tailwindcss/line-clamp' // 文本截断插件
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -13,7 +12,6 @@ export default {
   },
   plugins: [
     tailwindTypography,
-    tailwindLineClamp,
   ],
 }
 

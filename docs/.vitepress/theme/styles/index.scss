@@ -2,8 +2,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-// Global styles
-//@import './_variables.scss';
 //// custom styles // 自定义样式
 @import "./vars.scss";
 //// rainbow code highlighter theme Home Hero
@@ -19,12 +17,6 @@
 
 @import "./mode/light.scss";
 
-
-@layer base {
-  body {
-    @apply dark:bg-black;
-  }
-}
 
 *,
 *:after,

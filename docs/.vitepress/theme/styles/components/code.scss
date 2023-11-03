@@ -1,5 +1,3 @@
-@import "../_variables.scss";
-
 div[class*="language-"] {
   position: relative;
   background-color: var(--code-bg-color);
@@ -116,13 +114,13 @@ div[class*="language-"] {
 }
 
 
-@each $lang in $codeLang {
-  div[class*="language-"].ext-#{$lang} {
-    &:before {
-      content: "" + $lang;
-    }
-  }
-}
+//@each $lang in $codeLang {
+//  div[class*="language-"].ext-#{$lang} {
+//    &:before {
+//      content: "" + $lang;
+//    }
+//  }
+//}
 
 
 // ---
