@@ -1,11 +1,10 @@
 ---
 layout: home
 layoutClass: 'm-home-layout'
-
 hero:
   name: YaoYao
   text: Life of Forever Freedom.
-  tagline: O ever youthful, O ever weeping.
+  tagline: To Learn is to be Free.
   image:
     src: /img/logo/logo-card.png
     alt: YaoYao
