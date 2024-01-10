@@ -49,6 +49,10 @@ export default defineConfigWithTheme<ThemeConfig>({
       {async: '', src: 'https://www.googletagmanager.com/gtag/js?id=G-VTV8TERKLB'}
     ],
     [
+      "script",
+      {'data-website-id': 'c108e1df-d7aa-4bfd-b5c2-582ee21b65b3', src: 'https://us.umami.is/script.js'}
+    ],
+    [
       'script',
       {},
       `window.dataLayer = window.dataLayer || [];
