@@ -10,11 +10,11 @@
             <li class="py-4" v-for="subItem in item.data" :key="subItem">
               <div class="flex gap-4">
                 <dl class="min-w-[130px]">
-                  <dd class="text-base leading-6 font-semibold text-gray-500">
+                  <dd class="text-base leading-6 font-semibold text-gray-400">
                     <time datetime="{{subItem.date.defaultDate}}">{{ subItem.date.defaultDate }}</time>
                   </dd>
                 </dl>
-                <a class="break-all font-medium hover:text-sky-500"
+                <a class="break-all font-medium hover:text-gray-400	"
                    :href="withBase(subItem.url)">
                   {{ subItem.title }}
                 </a>

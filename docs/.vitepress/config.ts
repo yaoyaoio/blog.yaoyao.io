@@ -100,7 +100,7 @@ export default defineConfigWithTheme<ThemeConfig>({
     },
     personalInfo: {
       name: "YaoYao",
-      avatar: "/img/logo/logo-card.png",
+      avatar: "https://iyaoyao.io/profile/avatar.jpeg",
       description: "Have a nice day.",
     },
     giscus: {

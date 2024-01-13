@@ -14,6 +14,7 @@ lastUpdated: 2024-01-13T19:32:00
 publish: true
 ---
 
+
 ## 前言
 
 这是一台 Centos7.9 和 带有三块 3060 显卡的服务器。并且操作系统是最小化安装。无图形化界面。
@@ -37,9 +38,9 @@ lspci | grep -i nvidia
 ```bash
 # 安装nvida-detect
 sudo yum install -y https://www.elrepo.org/elrepo-release-7.el7.elrepo.noarch.rpm
-sudo yum install -y nvidia-detect     
+sudo yum install -y nvidia-detect
 # 执行检测
-nvidia-detect -v                    
+nvidia-detect -v
 ```
 
 ## 开始
@@ -190,3 +191,14 @@ deviceQuery 将输出 CUDA 的相关信息
 如图所示：
 
 ![https://i.yaoyao.io/blog/nvidia-demo-devicequery.png](https://i.yaoyao.io/blog/nvidia-demo-devicequery.png)
+
+## FAQ
+
+1. CUDA Toolkit 的不同版本对 Nvidia 驱动版本有要求，具体可以查看这里：
+
+    - https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html#cuda-toolkit-major-component-versions
+
+2. 如果你之前安装过，需要执行卸载命令
+   ```bash
+   sudo /usr/bin/nvidia-uninstall
+   ```

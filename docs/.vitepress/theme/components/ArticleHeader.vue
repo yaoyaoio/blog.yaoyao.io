@@ -34,7 +34,7 @@ const headerStyle = () => {
     />
 
     <div class="article-header-content">
-      <h1 class="article-title">
+      <h1 class="font-bold text-2xl">
         {{ frontmatter.title }}
       </h1>
       <p v-if="frontmatter.subtitle" class="article-subtitle">
