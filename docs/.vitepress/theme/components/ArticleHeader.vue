@@ -46,7 +46,7 @@ const headerStyle = () => {
 
 <style scoped>
 .article-header{
-  height: 400px;
+  height: 200px;
 }
 .article-header.use-image {
   max-width: 100%;
